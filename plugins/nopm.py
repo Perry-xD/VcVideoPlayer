@@ -20,7 +20,7 @@ import asyncio
 from pyrogram import Client, filters
 from helpers.bot_utils import USERNAME
 from pyrogram.errors import BotInlineDisabled
-from config import API_ID, API_HASH, SESSION_STRING, REPLY_MESSAGE
+from config import API_ID, API_HASH, SESSION_STRING
 
 User = Client(
     SESSION_STRING,
