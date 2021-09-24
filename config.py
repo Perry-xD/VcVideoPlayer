@@ -33,8 +33,4 @@ SUPPORT_GROUP = getenv("SUPPORT_GROUP", "SafoTheBot")
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "AsmSafone")
 ASSISTANT_NAME = getenv("ASSISTANT_NAME", "MyVideoPlayer")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
-REPLY_MESSAGE = getenv("REPLY_MESSAGE", "")
-if REPLY_MESSAGE:
-    REPLY_MESSAGE = REPLY_MESSAGE
-else:
-    REPLY_MESSAGE = None
+
