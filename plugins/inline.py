@@ -17,7 +17,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
 
 import asyncio
-from config import REPLY_MESSAGE
+
 from pyrogram import Client, errors
 from pyrogram.handlers import InlineQueryHandler
 from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent, InlineKeyboardButton, InlineKeyboardMarkup
@@ -30,7 +30,7 @@ buttons = [
                 InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/Perry-xD/VcVideoPlayer"),
             ]
          ]
 
@@ -41,7 +41,7 @@ async def search(client, query):
         answers.append(
             InlineQueryResultArticle(
                 title="Deploy Own Video Player Bot",
-                input_message_content=InputTextMessageContent(f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@AsmSafone | @SafoTheBot 👑</b>", disable_web_page_preview=True),
+                input_message_content=InputTextMessageContent("© Powered By : \n@AsmSafone | @SafoTheBot 👑</b>", disable_web_page_preview=True),
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
