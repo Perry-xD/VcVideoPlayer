@@ -21,7 +21,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors import MessageNotModified
 from helpers.bot_utils import BOT_NAME, USERNAME
-from config import SUPPORT_GROUP, UPDATES_CHANNEL
+#from config import SUPPORT_GROUP, UPDATES_CHANNEL
 from translations import START_TEXT, HELP_TEXT, ABOUT_TEXT
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
@@ -32,8 +32,8 @@ async def start(client, message):
                 InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("📢 CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("SOURCE 📦", url=f"https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("MASTER", url=f"https://t.me/teddy_bear_01"),
+                InlineKeyboardButton("GROUP", url=f"https://t.me/Chatting_House"),
             ],
             [
                 InlineKeyboardButton("🤖 ABOUT", callback_data="about"),
@@ -58,7 +58,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("🔙 BACK", callback_data="start"),
-                InlineKeyboardButton ("SUPPORT 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("GROUP 💬", url=f"https://t.me/chatting_House"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -74,7 +74,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("🔙 BACK", callback_data="start"),
-                InlineKeyboardButton ("SUPPORT 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("GROUP 💬", url=f"https://t.me/Chatting_house"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -92,8 +92,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("📢 CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("SOURCE 📦", url=f"https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("MASTER", url=f"https://t.me/teddy_bear_01"),
+                InlineKeyboardButton("GROUP", url=f"https://t.me/chatting_house"),
             ],
             [
                 InlineKeyboardButton("🤖 ABOUT", callback_data="about"),
